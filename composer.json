@@ -1,0 +1,26 @@
+{
+    "name": "luan/cart",
+    "description": "CartHelper will help to build E-commerce more easily",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nguyen Thanh Luan",
+            "email": "ntluan0301@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Luan\\Cart\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Luan\\Cart\\CartServiceProvider"
+            ]
+        }
+    }
+}
