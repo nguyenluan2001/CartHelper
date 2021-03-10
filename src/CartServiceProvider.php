@@ -12,9 +12,11 @@ class CartServiceProvider extends ServiceProvider
     function boot()
     {
         $this->loadRoutesFrom(__DIR__ . "/routes/web.php");
+        
         $this->publishes([
             __DIR__."/config/carthelper.php"=>config_path("carthelper.php")
         ]);
+        $this->publishes([__DIR__."/views"=>resource_path('views/cart')]);
     }
     function register()
     {
